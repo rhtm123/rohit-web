@@ -1,13 +1,12 @@
 import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
-export function load({ params }) {
-  if (params.slug === 'hello-world') {
-    return {
-      title: 'Hello world!',
-      content: 'Welcome to our blog. Lorem ipsum dolor sit amet...'
-    };
-  }
- 
-  throw error(404, 'Not found');
-}
+export async function load({ params,fetch }) {
+  let slug = params.slug;
+  let url = `https://gurukulapp.herokuapp.com/api/v1/short-tutorial/short-tut/${slug}/`;
+  // console.log(url);
+  let res = await fetch(url);
+  // console.log(res);
+
+  return res.json();
+ }

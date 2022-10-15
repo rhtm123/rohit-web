@@ -3,6 +3,8 @@
     export let data;
 </script>
 
-<h1>{data.title}</h1>
-<div>{@html data.content}</div>
-<h1>Single Article will go here !!</h1>
+<div class="container">
+
+<h1>{data.header}</h1>
+<div>{@html data.detail}</div>
+</div>

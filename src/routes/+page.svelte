@@ -1,5 +1,14 @@
 <script>
-
 </script>
 
-<h1 class="text-center text-3xl p-20">Something interesting will come soon</h1>
+<div class="container">
+    <br />
+
+    <h2>This is personal website of Rohit Maurya. </h2>
+
+
+</div>
+
+
+
+
