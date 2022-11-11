@@ -5,12 +5,7 @@
     import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
 
-	// NProgress css
 	import 'nprogress/nprogress.css';
-
-	// NProgress.configure({
-	// 	minimum: 0.16
-	// });
 
 	$: {
 		if ($navigating) {
@@ -23,17 +18,19 @@
 </script>
 
 <!-- navbar -->
-<p style="text-align:center;">Work in progress.. </p>
-
-<div class="nav container">
-    <a class="nav-logo" href="/">Rohit Maurya</a>
+<div class="nav-wrapper">
+  <div class="nav container">
+    <a class="nav-logo main-item nav-item" href="/">Rohit Maurya</a>
     <a class="nav-item" href="/articles">Articles</a>
   </div>
+</div>
 
 <slot />
 <!-- <DarkModeToggle /> -->
 <!-- footer -->
 <div>
+  <br />
+  <br />
   <br />
   <p style="text-align:center">Rohit Maurya v0.0.1 </p>
 </div>

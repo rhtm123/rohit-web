@@ -5,6 +5,7 @@
 
 <div class="container">
 
+<br />
 <h1>{data.header}</h1>
 <div>{@html data.detail}</div>
 </div>

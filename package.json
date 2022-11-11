@@ -22,9 +22,12 @@
 		"nprogress": "^0.2.0",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.44.0",
 		"svelte-preprocess": "^4.10.7",
 		"vite": "^3.1.0"
 	},
+	"dependencies": {
+		"svelte": "^3.32.3",
+		"svelte-typewriter": "3.0.0-alpha.11"
+	  },
 	"type": "module"
 }

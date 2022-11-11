@@ -1,1 +1,1 @@
-<h1>My Sotry will go here </h1>
+<h1>My Story will go here </h1>
