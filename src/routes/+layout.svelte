@@ -20,7 +20,11 @@
 <!-- navbar -->
 <div class="nav-wrapper">
   <div class="nav container">
-    <a class="nav-logo main-item nav-item" href="/">Rohit Maurya</a>
+
+    <a href="/" class="nav-logo main-item nav-item">
+      <img class="" src="/logo.png" alt="Logo" />
+      <span>Rohit Maurya</span>
+    </a>
     <a class="nav-item" href="/articles">Articles</a>
   </div>
 </div>
