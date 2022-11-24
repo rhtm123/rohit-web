@@ -18,23 +18,31 @@
 </script>
 
 <!-- navbar -->
+
+
 <div class="nav-wrapper">
-  <div class="nav container">
+  <div class="row">
+
+    <div class="col-12">
+    <div class="nav container">
+
 
     <a href="/" class="nav-logo main-item nav-item">
       <img class="" src="/logo.png" alt="Logo" />
-      <span>Rohit Maurya</span>
+      <span> Rohit Maurya</span>
     </a>
     <a class="nav-item" href="/articles">Articles</a>
+
+  </div>
+
+  </div>
   </div>
 </div>
 
 <slot />
 <!-- <DarkModeToggle /> -->
 <!-- footer -->
-<div>
-  <br />
-  <br />
-  <br />
-  <p style="text-align:center">Rohit Maurya v0.0.1 </p>
-</div>
+
+  <div class="footer">
+  <p style="text-align:center; font-weight:500; padding:1rem" class="subtitle">Rohit Maurya v0.0.1 </p>
+  </div>

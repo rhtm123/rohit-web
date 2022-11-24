@@ -15,10 +15,11 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_stores.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-d221983e.css"
+      "_app/immutable/assets/_layout-a40dfc37.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -45,7 +46,15 @@
     "isEntry": true,
     "imports": [
       "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-16665f86.css"
     ]
+  },
+  "src/routes/+page.js": {
+    "file": "entries/pages/_page.js",
+    "src": "src/routes/+page.js",
+    "isEntry": true
   },
   "src/routes/article/[slug]/+page.svelte": {
     "file": "entries/pages/article/_slug_/_page.svelte.js",
@@ -72,14 +81,6 @@
     "file": "entries/pages/articles/_page.js",
     "src": "src/routes/articles/+page.js",
     "isEntry": true
-  },
-  "src/routes/my-story/+page.svelte": {
-    "file": "entries/pages/my-story/_page.svelte.js",
-    "src": "src/routes/my-story/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
   },
   "_index.js": {
     "file": "chunks/index.js"

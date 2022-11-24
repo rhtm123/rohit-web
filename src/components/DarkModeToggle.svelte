@@ -5,5 +5,6 @@
     }
 
 </script>
-
+<div class="theme-wrapper">
 <input type="checkbox" on:click={toggleTheme} />
+</div>

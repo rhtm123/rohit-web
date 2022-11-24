@@ -3,9 +3,19 @@
     export let data;
 </script>
 
-<div class="container">
+<div class="article container">
 
-<br />
-<h1>{data.header}</h1>
-<div>{@html data.detail}</div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+
+        <br />
+        <h2 class="header">{data.header}</h2>
+        <div>{@html data.detail}</div>
+        </div>
+        <div class="col-2"></div>
+
+
+</div>
+
 </div>

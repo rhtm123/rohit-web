@@ -2,26 +2,25 @@ import { init } from '../serverless.js';
 
 export const handler = init({
 	appDir: "_app",
-	assets: new Set(["favicon.png"]),
+	appPath: "_app",
+	assets: new Set(["codingchaska.png","create.png","favicon.png","img/instagram-48.png","img/linkedin-48.png","laptop.png","logo.png","teach.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"_app/immutable/start-cbca0437.js","imports":["_app/immutable/start-cbca0437.js","_app/immutable/chunks/index-eeab8f8d.js","_app/immutable/chunks/singletons-fa63cc62.js"],"stylesheets":[]},
+		entry: {"file":"_app/immutable/start-4e8dab5f.js","imports":["_app/immutable/start-4e8dab5f.js","_app/immutable/chunks/index-e5a1bbd6.js","_app/immutable/chunks/singletons-7522accb.js","_app/immutable/chunks/preload-helper-b21cceae.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
 			() => import('../server/nodes/2.js'),
-			() => import('../server/nodes/3.js'),
-			() => import('../server/nodes/4.js'),
-			() => import('../server/nodes/5.js'),
-			() => import('../server/nodes/6.js')
+			() => import('../server/nodes/4.js')
 		],
 		routes: [
 			{
-				id: "article/[slug]",
+				id: "/article/[slug]",
 				pattern: /^\/article\/([^/]+?)\/?$/,
 				names: ["slug"],
 				types: [null],
-				page: { layouts: [0,,], errors: [1,2], leaf: 4 },
+				optional: [false],
+				page: { layouts: [0,,], errors: [1,2], leaf: 3 },
 				endpoint: null
 			}
 		],
