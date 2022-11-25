@@ -25,9 +25,9 @@ import ArticleComponent from "../components/ArticleComponent.svelte";
     <p class="welcome-text">WELCOME TO MY WORLD</p> 
     <h1>Hello, I'm <span class="name">Rohit Maurya</span></h1>
 
-    <Typewriter loopRandom><h2>a <span class="typewriter-title">developer.</span> <span class="typewriter-title">creator.</span> <span class="typewriter-title">teacher.</span> </h2></Typewriter>
+    <Typewriter loopRandom><h1>a <span class="typewriter-title">developer.</span> <span class="typewriter-title">creator.</span> <span class="typewriter-title">teacher.</span> </h1></Typewriter>
     <p class="description">
-        Every individual has a unique potential to achieve maximum success. Why not empower ourselves to be the best version? 
+        I envision Bharat becoming a Vishwa Guru.  I aim to contribute to that mission in a small way. I am honored to serve my country. 
     </p>
     <br/>
 
