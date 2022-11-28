@@ -12,8 +12,10 @@
 
             <br />
             <h3 class="header">My Thoughts</h3>
-            {#each data.results as item}
-            <h5><a href={"/article/"+item.slug}>{item.header}</a></h5>
+            <br />
+            {#each data.results as item, key}
+            <h5>{key+1}_ <a href={"/article/"+item.slug}>{item.header}</a></h5>
+            <br />
             {/each}
         </div>
         <div class="col-2"></div>

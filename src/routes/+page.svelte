@@ -28,6 +28,7 @@ import ArticleComponent from "../components/ArticleComponent.svelte";
     <Typewriter loopRandom><h1>a <span class="typewriter-title">developer.</span> <span class="typewriter-title">creator.</span> <span class="typewriter-title">teacher.</span> </h1></Typewriter>
     <p class="description">
         I envision Bharat becoming a Vishwa Guru.  I aim to contribute to that mission in a small way. I am honored to serve my country. 
+        <a  rel="noreferrer" target="_blank" href="/article/learning-setu-vision-beliefs-and-core-values">Read More</a>
     </p>
     <br/>
 
