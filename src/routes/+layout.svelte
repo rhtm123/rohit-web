@@ -3,9 +3,10 @@
     import DarkModeToggle from "../components/DarkModeToggle.svelte";
     import Logo from '$lib/images/logo.png';
     import NProgress from 'nprogress';
-	import { navigating } from '$app/stores';
+	  import { navigating } from '$app/stores';
+    import { onMount } from 'svelte';
 
-	import 'nprogress/nprogress.css';
+	  import 'nprogress/nprogress.css';
 
 	$: {
 		if ($navigating) {
@@ -15,6 +16,13 @@
 			NProgress.done();
 		}
 	}
+
+
+
+	onMount(() => {
+		AOS.init();
+	});
+  
 </script>
 
 <!-- navbar -->
@@ -32,6 +40,7 @@
       <span> Rohit Maurya</span>
     </a>
     <a class="nav-item" href="/articles">Articles</a>
+    
 
   </div>
 
@@ -39,8 +48,8 @@
   </div>
 </div>
 
+<DarkModeToggle />
 <slot />
-<!-- <DarkModeToggle /> -->
 <!-- footer -->
 
   <div class="footer">

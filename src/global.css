@@ -27,15 +27,14 @@ html {
   }
   
   html[data-theme='dark'] {
-    --color1: #199636;
-    --color2: #15802e;
-    --color3: #163a24;
-    --color4: #000;
-
-    --bg-color1: #000;
-    --bg-color2: #163a24;
-    --bg-color3: #f2efe6;
-    --bg-color4: #edfcf0;
+--color1: #199636;
+--color2: #15802e;
+--color3: #edfcf0;
+--color4: rgb(255, 255, 255);
+--bg-color1: #000;
+--bg-color2: #071c0f;
+--bg-color3: #032a12;
+--bg-color4: #010c04;
   }
   
   html.color-theme-in-transition,
@@ -54,7 +53,7 @@ html {
   }
   body {
     line-height: 1.6;
-    /* color: #111; */
+    color: var(--color4);
     background-color: var(--bg-color3);
     font-weight: 500;
     font-family: 'Quicksand', sans-serif;
@@ -164,6 +163,8 @@ html {
   h5,
   h6 {
     font-weight: 500;
+    color: var(--color3);
+
   }
   h1 {
     font-size: 37.009px;
@@ -385,7 +386,7 @@ html {
     /* position: absolute; */
     display: block;
     width: 100%;
-    background-color: var(--bg-color1);
+    background-color: var(--bg-color2);
     box-shadow: 1px 4px 16px var(--bg-color3);
   }
   .nav {
@@ -416,7 +417,7 @@ html {
 
 /* card */
   .card {
-    background-color: var(--bg-color1);
+    background-color: var(--bg-color2);
     padding:1.6rem;
     box-shadow: 1px 4px 16px var(--bg-color3);
   }
@@ -557,3 +558,26 @@ html {
 }
 
 /* footer */
+
+/* theme */
+
+.theme-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 5%;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 664px) {
+  .theme-wrapper {
+    right: 3%;
+  }
+}
+
+.theme-wrapper .dark {
+  color:#edfcf0;
+}
+.theme-wrapper .light {
+  color:#000;
+}
