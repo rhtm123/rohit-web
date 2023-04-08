@@ -149,7 +149,7 @@ import ArticleComponent from "../components/ArticleComponent.svelte";
         <div class="row">
         <div class="col-12">
             <div class="header-wrapper">
-                    <span class="subtitle">My Mission</span>
+                    <span class="subtitle">Mission 1</span>
                     <h2 class="header">Coding Chaska</h2>
                      <span data-aos="fade">
                         I am building Coding Chaska. 
@@ -160,6 +160,22 @@ import ArticleComponent from "../components/ArticleComponent.svelte";
                     <br />
                    <a data-aos="fade" href="https://www.codingchaska.com/" rel="noreferrer" target="_blank"><button>Know more </button></a>
             </div>
+
+            <br />
+            <br />
+
+            <div class="header-wrapper">
+                <span class="subtitle">Mission 2</span>
+                <h2 class="header">Decorate Ghar</h2>
+                 <span data-aos="fade">
+                    
+                    We are a team of passionate interior designers who love to create beautiful and functional spaces for our clients.
+                    We listen to your needs, preferences, and budget, and offer you personalized solutions that suit your lifestyle and personality. Decorate Ghar provides its services in Naigaon, Mira Road, Bhayandar, & Vasai.
+                </span>
+                <br />
+                <br />
+               <a data-aos="fade" href="https://www.decorateghar.com/" rel="noreferrer" target="_blank"><button>Know more </button></a>
+        </div>
          </div>
         </div>
         <br />
